@@ -21,14 +21,34 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
+  text-align: center;
+  font-family: Arial, "Myanmar Text", sans-serif;
   animation: hideAfter15s 1s linear 15s forwards;
 }
 
-#announcement img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
+.content {
+  width: 90%;
+  max-width: 600px;
+  padding: 30px;
+  background: #0066cc;
+  border-radius: 25px;
+  line-height: 1.8;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.package {
+  background: white;
+  color: #0066cc;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 @keyframes hideAfter15s {
@@ -43,7 +63,33 @@ html, body {
 <body>
 
 <div id="announcement">
-  <img src="AnyNet.jpg" alt="AnyNet Announcement">
+  <div class="content">
+
+    <h1>AnyNet WiFi ဝန်ဆောင်မှု အသိပေးကြေညာချက်</h1>
+
+    Starlink ၏ မူဝါဒအရ<br>
+    <b>AnyNet WiFi ကို GB Package စနစ်ဖြင့်သာ<br>
+    ရရှိနိုင်တော့မည် ဖြစ်ပါသည်။</b>
+
+    <h3>GB Package များ</h3>
+
+    <div class="package">1GB - 2,000 ကျပ်</div>
+    <div class="package">3GB - 5,000 ကျပ်</div>
+    <div class="package">12GB - 20,000 ကျပ်</div>
+
+    <p>
+      <b>မှတ်ချက်</b><br>
+      အချိန်အကန့်အသတ် မရှိပါ။<br>
+      မိမိအသုံးပြုသလောက် GB အလိုက်သာ
+      လျော့နည်းသွားမည် ဖြစ်ပါသည်။
+    </p>
+
+    <p>
+      AnyNet WiFi ကို အသုံးပြုအားပေးကြသော<br>
+      Customer များအား ကျေးဇူးတင်ရှိပါသည်။
+    </p>
+
+  </div>
 </div>
 
 <script>
